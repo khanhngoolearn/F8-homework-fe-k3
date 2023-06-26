@@ -1,0 +1,28 @@
+.contact-in4 {
+    width: calc(100% / 3);
+    clear: both;
+    float: left;
+}
+
+.contact-form {
+    width: calc(66.66%);
+    float: right;
+}
+
+.contact-input {
+    width: 100%;
+    margin: 8px 0px;
+    padding: 4px;
+}
+
+#message {
+    margin: 8px 0px;
+    width: 100%;
+}
+
+.send {
+    color: #fff;
+    background-color: rgb(27, 120, 120);
+    padding: 8px;
+}
+

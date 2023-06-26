@@ -1,0 +1,46 @@
+.header,
+.header td {
+    border: 2px  solid #aea91f;
+    border-spacing: 0px;
+}
+
+.header td {
+    padding: 4px 44px;
+}
+
+.header td:first-child {
+    color: #fff;
+    background-color: #aea91f;
+}
+
+.header td + td {
+    color: #aea91f;
+}
+
+.main {
+    margin-top: 40px;
+}
+
+.main-info {
+    width: calc(100% / 3);
+    background-color: rgb(161, 146, 146);
+}
+
+.main-info li {
+    list-style-type: none;
+}
+
+.name {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.info li a {
+    color: #aea91f;
+}
+
+.map {
+    width: 66.66%;
+}
+

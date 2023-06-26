@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+}
+
+.clients {
+    flex: 1, 2;
+    display: flex;
+}
+
+.clients, 
+.clients-avt {
+    flex: 1;
+}
+
+.clients-avt {
+    width: 40px;
+    margin: 0px 24px;
+    border-radius: 90%;
+    height: 50%;
+    margin-top: 32px;
+}
+
+.clients-cmt {
+    text-align: justify;
+}
+
+
+
+
+
