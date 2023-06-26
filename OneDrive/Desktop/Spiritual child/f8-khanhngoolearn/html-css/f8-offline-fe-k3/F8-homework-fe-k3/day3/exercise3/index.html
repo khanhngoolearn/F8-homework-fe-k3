@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="width: 400px;">
+        <form action="" class="form">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" class="input">
+        </form>
+        <form action="" class="form">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" class="input">
+        </form>
+        <form action="" class="form">
+            <label for="city">City of the <br> employment:</label>
+            <input type="text" name="city" id="city" class="input">
+        </form>
+        <form action="" style="display: flex;" class="form">
+            <label for="webserver">Web server:</label>
+            <select name="webserver" id="webserver">
+                <option value="default" disabled selected>-Choose your server</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+            </select>
+        </form>
+        <form action="" style="display: flex;" class="form">
+            <label>Please specify <br> your role:</label>
+            <div style=" margin-left: 18px;">
+                <div class="admin">
+                    <input type="checkbox" name="Admin" id="Admin">
+                    <label for="Admin">Admin</label>
+                </div>
+                <div class="engineer">
+                    <input type="checkbox" name="engineer" id="engineer">
+                    <label for="engineer">Engineer</label>
+                </div>
+                <div class="manager">
+                    <input type="checkbox" name="manager" id="manager">
+                    <label for="manager">Manager</label>
+                </div>
+                <div class="guest">
+                    <input type="checkbox" name="guest" id="guest">
+                    <label for="guest">Guest</label>
+                </div>
+            </div>
+        </form>
+        <form action="" style="display: flex;" class="form">
+            <label> Single Sign-on <br> the following:</label>
+            <div style="margin-left: 14px;">
+                <div class="mail">
+                    <input type="checkbox" name="email" id="email">
+                    <label for="email">Mail</label>
+                </div>
+    
+                <div class="payroll">
+                    <input type="checkbox" name="payroll" id="payroll">
+                    <label for="payroll">Payroll</label>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="self-service" id="self-service">
+                    <label for="self-service">Self-service</label>
+                </div>
+            </div>
+        </form>
+        <div class="button">
+            <button>Login</button>
+            <input type="reset" value="Reset">
+        </div>
+
+    </div>
+</body>
+</html>
