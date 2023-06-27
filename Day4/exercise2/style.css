@@ -1,0 +1,45 @@
+.small-main {
+    text-align: center;
+}
+
+.heading {
+    font-size: 24px;
+    color: rgb(71, 15, 15);
+    font-family: BebasNeue, sans-serif;
+}
+
+.sub-heading {
+    font-size: 32px;
+    font-family: Alfa Slab One, sans-serif;
+    color: rgb(71, 15, 15);
+}
+
+.input {
+    font-family: BebasNeue,sans-serif;
+}
+
+.input-button {
+    color: #fff;
+    background-color: red;
+    font-family: Alfa Slab One, sans-serif;
+    border-radius: 4px;
+}
+
+.input,
+.input-button {
+    width: 90%;
+    font-size: 20px;
+    padding: 12px;
+    box-sizing: border-box ;
+    margin: 8px 0px;
+}
+
+@font-face {
+    font-family: Alfa Slab One;
+    src: url(./font/AlfaSlabOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(./font/BebasNeue-Regular.ttf);
+}

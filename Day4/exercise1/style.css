@@ -1,0 +1,34 @@
+.main {
+    width: 800px;
+    background-color: rgb(10, 10, 64);
+}
+
+.small-main {
+    color: #fff;
+    padding: 20px;
+}
+
+.input {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.send {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: yellow;
+}
+
+.main:hover .input {
+    background-color: #ddd;
+}
+
+.main:hover .input::placeholder {
+    color: yellow;
+}
+
+.main:hover .send {
+    color: #fff;
+    background-color: orangered;
+    cursor: pointer;
+}
