@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sub-main js-sub-main">
+            <i class="ti-plus icon-plus js-icon-plus " ></i>
+            <i class="ti-minus icon-minus js-icon-minus " ></i>
+            <h4>How to set random color ?</h4>
+        </div>
+        <p class="text js-text " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, delectus.</p>
+        <div class="sub-main js-sub-main">
+            <i class="ti-plus icon-plus js-icon-plus "></i>
+            <i class="ti-minus icon-minus js-icon-minus "></i>
+            <h4>How to use theme color and add new theme color ?</h4>
+        </div>
+        <p class="text js-text" >Lorem, ipsum dolor. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, qui distinctio reprehenderit, expedita velit similique exercitationem dolore excepturi nisi totam unde laborum natus quaerat voluptates accusantium, provident suscipit. Libero, amet sint autem dolorem minus neque, aliquid atque deserunt rerum obcaecati adipisci corporis iste. Exercitationem quisquam voluptas sit dolorem error. Architecto, ad? Nemo voluptatum soluta, maxime architecto praesentium quod nobis aperiam perferendis magnam nam in quisquam distinctio natus minima, rerum iste!</p>
+        <div class="sub-main js-sub-main">
+            <i class="ti-plus icon-plus js-icon-plus "></i>
+            <i class="ti-minus icon-minus js-icon-minus " ></i>
+            <h4>How to change icon ?</h4>
+        </div>
+        <p class="text js-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolore est, mollitia nesciunt explicabo sunt nostrum excepturi facere modi magni ipsam aperiam numquam delectus sed possimus labore veritatis voluptatum eligendi animi quos deleniti veniam harum pariatur cumque? Minus excepturi possimus necessitatibus vero dolore magnam, sed temporibus.</p>
+    </div>
+
+    <script>
+        const Submains = document.querySelectorAll('.js-sub-main');
+        const Texts = document.querySelectorAll('.js-text');
+        const Pluses = document.querySelectorAll('.js-icon-plus');
+        const Minuses = document.querySelectorAll('.js-icon-minus');
+
+        Submains.forEach((Submain, index) => {
+            Submain.addEventListener('click', () => {
+                Minuses[index].style.display = 'none';
+                Texts[index].style.display = 'block';
+                Pluses[index].style.display = 'block';
+            })
+        });
+    </script>
+
+
+</body>
+</html>

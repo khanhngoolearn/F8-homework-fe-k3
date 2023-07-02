@@ -1,0 +1,107 @@
+html {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    box-sizing: border-box;  
+}
+
+body {
+    /* background-color: #000; */
+}
+
+.main {
+    width: 600px;
+    height: 1000px;
+}
+
+
+.title {
+    font-family: "Lobster", sans-serif;
+    font-weight: 200;
+    font-size: 40px
+}
+
+.input-item {
+    margin: 40px;
+    display: flex;
+    position: relative;
+}
+
+#subject {
+    width: 93%;
+    appearance: none;
+    padding: 4px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 12px;
+}
+
+#message {
+    height: 92px;
+    width: 100%;
+}
+
+#message::placeholder {
+    position: relative;
+    top: -40%;
+}
+
+.icon {
+    color: #fff;
+    background-color: #0000003c;
+    padding: 12px;
+}
+
+.icon-end {
+    position: absolute;
+    right: 4px;
+    top: 25%;
+    color: #00000030;
+}
+
+.icon-end-close {
+    display: none;
+    position: absolute;
+    right: 4px;
+    top: 25%;
+    color: #000;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.footer {
+    display: flex;
+}
+
+#accept {
+    margin-left: 36px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    align-items: center;
+}
+
+.send {
+    margin-left: 184px;
+    padding: 8px 20px;
+    color: #fff;
+    background: red;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster-Regular.ttf);
+    font-weight: 200;
+}
+
+
+/* ACTION  */
+

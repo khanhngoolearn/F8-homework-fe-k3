@@ -1,0 +1,42 @@
+.main {
+    width: 800px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sub-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 1px 0 10px rgba(53, 53, 71, 0.5);
+}
+
+.picture {
+    border-radius: 50%;
+    border: 1px solid #c1d920;
+    margin-bottom: 20px;
+}
+
+.img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.button {
+    color: #fff;
+    background-color: #c1d920;
+    padding: 8px;
+}

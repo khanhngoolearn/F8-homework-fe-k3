@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey there</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main" style="background-color: #fff;" >
+        <h2 class="title">Hey there</h2>
+        <h3><span style="color: red;" >We'd like to hear from you. </span>Send us your message or say hi with our contact form or directly via phone, we love to chat.</h3>
+        <form action="">
+            <label for="name" class="input-item js-input-item " >
+                <i class="ti-user icon js-icon "></i>
+                <input type="text" class="input ti-user" id="name" placeholder="Your Name">
+                <i class="ti-star icon-end js-icon-end "></i>
+                <i class="ti-close icon-end-close js-icon-end-close "></i>
+            </label>
+
+            <label for="email" class="input-item js-input-item ">
+                <i class="ti-email icon js-icon " ></i>
+                <input type="text" class="input" id="email" placeholder="your@gmail.com" >
+                <i class="ti-star icon-end js-icon-end "></i>
+                <i class="ti-close icon-end-close js-icon-end-close "></i>
+            </label>
+
+            <label for="phone" class="input-item js-input-item ">
+                <i class="ti-mobile icon js-icon  " ></i>
+                <input type="tel" class="input" id="phone" placeholder="+44 00 123">
+                <i class="ti-star icon-end js-icon-end "></i>
+                <i class="ti-close icon-end-close js-icon-end-close "></i>
+            </label>
+
+            <div class="input-item js-input-item " >
+                <i class="ti-book icon js-icon"></i>
+                <select name="subject" id="subject" class="select js-select">
+                    <option value="Subject" disabled selected>  Subject</option>
+                    <option value="Master">Master</option>
+                    <option value="Admin">Admin</option>
+                </select>
+                <i class="ti-arrows-vertical icon-end js-icon-end "></i>
+            </div>
+
+            <label for="message" class="input-item js-input-item ">
+                <i class="ti-layers icon js-icon " ></i>
+                <input type="text" name="message" id="message" placeholder="Message" >
+                <i class="ti-star icon-end js-icon-end "></i>
+                <i class="ti-close icon-end-close js-icon-end-close "></i>
+            </label>
+
+            <div class="footer">
+                <input type="checkbox" name="accept" id="accept">
+                <label for="accept" style="line-height: 35px;" >Send me a copy of this message</label>
+
+                <div>
+                    <input type="button" value="SEND" class="send" >
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const inputItems = document.querySelectorAll('.js-input-item');
+        const iconColors = document.querySelectorAll('.js-icon');
+        const iconEnds = document.querySelectorAll('.js-icon-end');
+        const iconCloses = document.querySelectorAll('.js-icon-end-close');
+
+        inputItems.forEach((inputItem, index) => {
+            inputItem.addEventListener('click', () => {
+                iconColors[index].style.background = '#000';
+                iconEnds[index].style.display = 'none';
+                iconCloses[index].style.display = 'block';
+            })
+        });
+
+        inputItems.forEach((inputItem, index) => {
+            inputItem.addEventListener('mouseenter', () => {
+                iconEnds[index].style.color = '#000';
+                iconColors[index].style.background = '#000';
+            })
+        });
+
+        inputItems.forEach((inputItem, index) => {
+            inputItem.addEventListener('mouseleave', () => {
+                iconEnds[index].style.color = '#00000030';
+                iconColors[index].style.background = '#00000030';
+            })
+        });
+
+    </script>
+
+</body>
+</html>
