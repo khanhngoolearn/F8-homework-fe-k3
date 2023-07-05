@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.point:hover {
+    cursor: pointer;
+}
+
+html {
+    font-family: "Nunito", sans-serif;
+    background-image: url(../fonts/img-ex3.jpg);
+}
+
+.form {
+    width: 1000px;
+    height: 560px;
+    margin: 84px auto 0;
+    display: flex;
+    position: relative;
+}
+
+.form-about {
+    color:  #fff;
+    background-color: #ff574d;
+    padding: 80px 20px;
+    text-align: center;
+    width: 40%;
+    border-radius: 20px 0 0 20px;
+}
+
+.form-about h2 {
+    font-size: 40px;
+}
+
+.form-about span {
+    font-size: 40px;
+    background-color: #fff;
+    color: #ff574d;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.form-about p {
+    margin: 30px 0px;
+    text-align:left;
+}
+
+.form-about button {
+    color: #ff574d;
+    padding: 12px 40px;
+    background: #fff;
+    border-radius: 8px;  
+    border: none;
+}
+
+.form-about ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form-about ul li {
+    list-style-type: none;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    margin: 0px 12px;
+    background-color: #e81616;
+    border-radius: 8px;
+}
+
+.form-about ul li a {
+    color: #fff;
+    line-height: 32px;
+    display: block;
+}
+
+.arrow-right {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #e81616;
+    position: absolute;
+    text-align: center;
+    left: 38%;
+    top: 52%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.arrow-right i {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+.form-login {
+    text-align: center;
+    width: 60%;
+    background-color: #fff;
+    padding: 60px 40px;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-login h2,
+.form-login h2 > span {
+    font-size: 35px;
+}
+
+.form-login .hr {
+    width: 72px;
+    height: 2px;
+    background-color: #e81616;
+    margin: 20px 0px;
+    transform: translateX(236px);
+}
+.form-login .input {
+    padding: 12px;
+    width: 100%;
+    margin: 16px 0;
+}
+
+.form-login .form-input__notice #remember {
+    width: 20px;
+    height: 20px;
+}
+
+.form-login .form-input__notice {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.form-login .input-button {
+    color: #fff;
+    background-color: #e81616;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-login a {
+    text-decoration: none;
+    color: #000;
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
