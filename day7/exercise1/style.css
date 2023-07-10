@@ -1,0 +1,61 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Font", sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: url(../fonts/banner.jpg);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.project {
+    background-color: #fff;
+    color: #3f3424;
+    width: 560px;
+    padding: 20px 16px;
+    margin-left: 20%;
+    position: relative;
+}
+
+h2 {
+    color: #bf4240;
+}
+
+p {
+    padding: 16px 0;
+}
+
+.project-address {
+    padding-bottom: 24px;
+}
+
+span {
+    color: #fff;
+    font-family: "Font", sans-serif;
+    font-weight: 300;
+    background-color: #bf4240;
+    padding: 12px 28px;
+    position: absolute;
+    right: 44px;
+    border-radius: 4px;
+}
+
+@font-face {
+    font-family: "Font";
+    src: url(../fonts/Asap-Italic-VariableFont_wdth\,wght.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Font";
+    src: url(../fonts/Full\ 238\ Font\ SFU/SFU);
+    font-weight: 300;
+}

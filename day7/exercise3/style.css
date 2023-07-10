@@ -1,0 +1,81 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Font";
+}
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.main h1 {
+    padding-left: 38px;
+}
+
+.place {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.place-item {
+    text-align: center;
+    margin: 12px 4px;
+    background-color: gainsboro;
+    border-radius: 40px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.place-item:hover {
+    color: #fff;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
+.place-item span {
+    font-size: 10px;
+}
+
+
+.place-image {
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-item {
+    background: url(../fonts/landmark81.jpg) center  / cover no-repeat;
+    flex-basis: calc(100%/3 - 40px);
+    margin: 12px;
+    color: #fff;
+    position: relative;
+}
+
+.address {
+    position: absolute;
+    font-weight: bold;
+    top: 12px;
+    left: 20px;
+}
+
+.quantity {
+    position: absolute;
+    bottom: 8%;
+    font-size: 12px;
+    left: 20px;
+}
+
+@font-face {
+    font-family: "Font";
+    src: url(../fonts/Asap-VariableFont_wdth\,wght.ttf);
+}
