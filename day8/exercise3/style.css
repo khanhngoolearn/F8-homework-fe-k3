@@ -8,6 +8,7 @@ html {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 12px;
+    height: 100%;
 }
 
 .clear-fix {
@@ -15,8 +16,9 @@ html {
 }
 
 .main {
-    margin: 40px 100px;
+    margin: 0 100px;
     text-align: center;
+    height: 100vh;
 }
 
 .main::after {
@@ -48,6 +50,7 @@ html {
 
 img {
     width: 100px;
+    max-height: 100px;
 }
 
 .box-info {
@@ -57,11 +60,16 @@ img {
 .box-info h3 {
     font-weight: 500;
     margin: 8px 0;
+    font-size: 20px;
 }
 
 .box-info p {
     line-height: 1.9;
     margin-bottom: 20px;
+    min-height: 91.2px;
+    display: inline-block;
+    font-weight: 100;
+    color: #ccc;
 }
 
 input {
@@ -71,6 +79,7 @@ input {
     padding: 12px 28px;
     border-radius: 2px;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
 }
 
 @font-face {

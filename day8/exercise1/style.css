@@ -15,8 +15,9 @@ html {
 
 .megaMenu {
     background: url(../fonts/mega-menu.png) no-repeat center / cover;
-    min-height: 500px;
+    min-height: 600px;
     filter: brightness(0.9);
+    object-fit: cover;
 }
 
 .header {
@@ -81,7 +82,13 @@ html {
     border-radius: 12px;
     display: flex;
     padding: 44px;
-    max-height: 400px;
+    max-height: 452px;
+}
+
+.menuBox-item1-usage::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .menuBox-item1 {
@@ -90,18 +97,16 @@ html {
 
 .usage {
     margin-bottom: 12px;
-    font-weight: 700;
-}
-
-.usage ~ ul {
-    /* display: flex; */
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .menuBox-item1 ul li {
     list-style: none;
-    padding: 4px 0px;
+    padding: 8px 0px;
     width: 50%;
     float: left;
+    margin-top: 2px;
 }
 
 .menuBox-item1 ul li a {
@@ -109,9 +114,16 @@ html {
     text-decoration: none;
 }
 
+.menuBox-item2-styleguide::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .styleguide {
     margin: 28px 0 12px;
-    font-weight: 700;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .wall {
@@ -126,13 +138,15 @@ html {
 }
 
 .elements {
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 12px;
 }
 
+
+
 .menuBox-item2 ul li {
     list-style: none;
-    padding: 4px 0px;
+    padding: 8px 0px;
     width: 33.33%;
     float: left;
 }

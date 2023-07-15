@@ -33,7 +33,8 @@ html {
     background-color: gainsboro;
     width: 400px;
     position: relative;
-    margin-top: 40px;
+    float: right;
+    height: 100%;
 }
 
 .cart-title {
@@ -47,7 +48,7 @@ html {
 .four {
     color: #fff;
     background: blue;
-    font-size: 8px;
+    font-size: 12px;
     border-radius: 50%;
     padding: 0.2px 2px;
     position: absolute;
@@ -63,10 +64,13 @@ html {
     padding: 16px;
     background-color: #fff;
     margin: 1px 0;
+    overflow: hidden;
 }
 
 img {
     width: 80px;
+    max-height: 80px;
+    object-fit: cover;
 }
 
 .product-info {
@@ -77,6 +81,13 @@ img {
 .product-name {
     display: flex;
     justify-content: space-between;
+}
+
+
+.quantity i:hover,
+.product-name span:hover i {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
 .product-qap {
@@ -103,6 +114,7 @@ img {
     position: absolute;
     bottom: 0%;
     background-color: #fff;
+    width: 100%;
 }
 
 .subtotal p {
@@ -133,12 +145,6 @@ img {
     font-size: 12px;
 }
 
-.subtotal label:nth-of-type(1) {
-    border: 1px solid;
-    width: 100%;
-    padding: 4px 146px;
-}
-
 .subtotal label:nth-of-type(1):hover {
     opacity: 0.7;
     cursor: pointer;
@@ -155,6 +161,8 @@ img {
     color: #fff;
     background-color: blue;
     border-radius: 4px;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
 }
 
 .subtotal-footer {
@@ -169,6 +177,7 @@ img {
     border: 1px solid blue;
     padding: 12px;
     border-radius: 50%;
+    color: blue;
 }
 
 @font-face {
