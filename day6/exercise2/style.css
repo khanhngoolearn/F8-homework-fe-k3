@@ -10,7 +10,7 @@ html {
 
 body {
 
-    background-color: #34526c;
+    background-color: #ebf5fe;
 }
 
 .main {
@@ -27,6 +27,7 @@ body {
     border-radius: 12px;
     margin: 30px;
     border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .main__item:hover {
@@ -36,7 +37,7 @@ body {
 
 .main__item p {
     padding: 16px 0px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .main__item a {
@@ -57,11 +58,17 @@ body {
     border-radius: 50%;
     text-align: center;
     margin-right: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, rgb(196, 196, 37),#fff);
 }
 
 .main__header-item i {
     line-height: 44px;
     font-size: 16px;
+}
+
+.main__header-item h3 {
+    font-weight: bold;
 }
 
 @font-face {

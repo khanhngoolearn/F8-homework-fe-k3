@@ -9,58 +9,66 @@ html {
 }
 
 .box {
-    background: url(../fonts/landmark81.jpg) center / cover no-repeat;
+    position: relative;
+}
+
+.box-img {
     width: 100%;
-    height: 100%;
+}
+
+.box-img img {
+    width: 100%;
+    display: block;
+    filter: brightness(0.9);
+}
+
+.box-profile {
+    position: absolute;
     display: flex;
-    flex-direction: column-reverse;
+    bottom: 52px;
+    left: 160px;
 }
 
-.child-box {
-    display: flex;
-    transform: translateX(80px);
-    max-width: 1000px;
-    margin-top: 200px;
+.box-profile__img img {
+    width: 240px;
+    height: 180px;
+    border-radius: 12px;
 }
 
-img {
-    width: 200px;
-}
-
-.intro {
-    padding: 20px 32px;
+.box-profile__intro {
+    padding: 28px;
     color: #fff;
+    width: 520px;
 }
 
-.intro h1 {
-    display: inline-block;
-    width: 400px;
+.box-profile__intro p,
+.box-profile__intro .name {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
-.quantity {
-    margin-left: 100px;
+.box-profile__info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
 }
 
 .nav {
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 100px;
-}
-
-.nav-item {
-    padding: 12px;
+    margin-right: 60px;
 }
 
 input {
-    background-color: #fff;
     border: none;
+    color: #000;
+    background-color: transparent;
+    padding: 12px;
 }
 
 .hr {
-    height: 2px;
+    height: 4px;
     width: 100%;
     background-color: red;
-    margin-top: 4px;
     display: none;
 }
 
@@ -72,8 +80,7 @@ input:focus ~ .hr {
     display: block;
 }
 
-
 @font-face {
     font-family: "Font";
-    src: url(../fonts/Asap-Italic-VariableFont_wdth\,wght.ttf);
+    src: url(../fonts/Asap-VariableFont_wdth\,wght.ttf);
 }
