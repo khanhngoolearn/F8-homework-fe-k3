@@ -1,0 +1,111 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 0px auto;
+    max-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    width: 400px;
+    height: 320px;
+    margin: 20px 10px;
+    border: 2px solid gray;
+    padding: 40px;
+    cursor: pointer;
+    padding: 40px 12px;
+    transition: all .8s ease;
+}
+
+.img {
+    display: none;
+}
+
+.box {
+    padding: 0px 28px;
+}
+
+.icon img {
+    max-width: 92px;
+    height: 92px;
+}
+
+.box h3 {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.box p {
+    line-height: 1.3;
+    color: #9e9e9e;
+    min-height: 62.4px;
+}
+
+.learn-more {
+    margin-top: 64px;
+    font-weight: bold;
+    display: none;
+    position: relative;
+}
+
+.learn-more span a {
+    text-decoration: none;
+    color:#fff ;
+}
+
+.learn-more span:nth-child(2) {
+    margin-left: 16px;
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 3px 4px;
+}
+
+/* ACTION  */
+
+.container:hover {
+    color: #fff;
+    background-color: rgb(193, 44, 69, 0.9);
+    position: relative;
+    cursor: default;
+    padding: 12px;
+}
+
+.container:hover .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    display: block;
+}
+
+.container:hover .box {
+    border: 1px solid #fff;
+    padding: 28px;
+}
+
+.container:hover .icon {
+    display: none;
+}
+
+.container:hover p {
+    color: #fff;
+}
+
+.container:hover .learn-more {
+    display: block;
+}
+
+.learn-more span:hover:nth-child(2) {
+    background-color: #fff;
+    color: rgb(193, 44, 69, 0.9);
+    cursor: pointer;
+}

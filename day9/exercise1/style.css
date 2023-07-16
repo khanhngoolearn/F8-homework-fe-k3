@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.col1 {
+    width: 60%;
+}
+
+.box {
+    width: 800px;
+    margin: 16px auto;
+    display: flex;
+    height: 160px;
+    position: relative;
+    justify-content: space-between;
+    left: 20%;
+}
+
+.box-info {
+    text-align: right;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+}
+
+.box-info h2 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.box-info p {
+    color: #999;
+    margin: 20px 0;
+    line-height: 1.8;
+    min-height: 57.6px;
+    max-width: 320px;
+}
+
+.box-info button {
+    font-family: "Inter", sans-serif;
+    border-radius: 99px;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: none;
+    color: #999;
+    float: right;
+    transition: all 0.5s ease;
+}
+
+.box-circle {
+    position: relative;
+    left: 44%;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 237, 237);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(30, 97, 77);
+    border-radius: 50%;
+}
+
+.wall {
+    width: 1px;
+    height: 142px;
+    background-color: #999;
+    margin-left: 14px;
+    margin-top: 4px;
+}
+
+.box-pro {
+    position: absolute;
+    left: 52%;
+    transition: all .5s ease;
+}
+
+.box-pro span {
+    display: flex;
+    width: 100px;
+    margin-top: 4px;
+    font-family: "Inter",sans-serif;
+}
+
+.col2 {
+    width: 40%;
+    text-align: center;
+}
+
+.col2 img {
+    width: 444px;
+}
+
+/* ACTION  */
+
+button:hover {
+    color: #fff;
+    background-color: rgb(125, 125, 12);
+    cursor: pointer;
+}
+
+.box:hover .box-info {
+    text-align: left;
+    left: 55%;
+}
+
+.box:hover .box-pro {
+    left: 30%;
+    direction: rtl;
+}
+
+.box:hover button {
+    float: left;
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(../font/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
+}
