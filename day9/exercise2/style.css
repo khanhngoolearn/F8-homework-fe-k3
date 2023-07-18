@@ -25,6 +25,7 @@
 
 .img {
     display: none;
+    transition: opacity 0.8s ease;
 }
 
 .box {

@@ -9,7 +9,7 @@ html {
 }
 
 .main {
-    height: 100vh;
+    max-height: 100vh;
     display: flex;
 }
 
@@ -21,7 +21,7 @@ html {
     width: 800px;
     margin: 16px auto;
     display: flex;
-    height: 160px;
+    max-height: 160px;
     position: relative;
     justify-content: space-between;
     left: 20%;
@@ -112,7 +112,7 @@ html {
 
 /* ACTION  */
 
-button:hover {
+.box:hover button {
     color: #fff;
     background-color: rgb(125, 125, 12);
     cursor: pointer;
