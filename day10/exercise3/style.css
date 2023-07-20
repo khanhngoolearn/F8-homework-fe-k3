@@ -1,0 +1,98 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #000000bf; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.envelope {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: brown;
+    transform: translateY(-32px);
+    transition: transform .6s ease;
+}
+
+.top-side {
+    border-bottom: 150px solid brown;
+    top: -150px;
+    transform-origin: bottom;
+    z-index: 6;
+    transform: rotateX(180deg);
+    transition: all .8s ease;
+    transition-delay: 0.6s;
+}
+
+.letter {
+    width: 90%;
+    height: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    transition: all 1s ease;
+}
+
+.bottom-side {
+    border-bottom: 150px solid rgb(203, 73, 73);
+    position: absolute !important;
+    z-index: 4;
+    bottom: 0%;
+}
+
+.top-side, .bottom-side {
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    position: relative;
+}
+
+.left-side {
+    border-left: 125px solid rgb(203, 73, 73);
+    position: absolute;
+    left: 0%;
+}
+
+.right-side {
+    border-right: 125px solid rgb(203, 73, 73);
+    position: absolute;
+    right: 0%;
+}
+
+.left-side, .right-side {
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    top: 0;
+    z-index: 4;
+}
+
+/* ACTION  */
+
+
+.envelope:hover {
+    transform: translateY(0);
+    transition-delay: .3s;
+}
+
+.envelope:hover .top-side {
+    transform: rotateX(0deg);
+    z-index: 3;
+    transition-delay: .3s;
+}
+
+.envelope:hover .letter {
+    top: -70%;
+    z-index: 3;
+    transition-delay: .6s;
+}
+
+.envelope:hover .envelope::after {
+    transform: translateX(0);
+}
