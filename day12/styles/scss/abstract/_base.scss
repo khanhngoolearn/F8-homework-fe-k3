@@ -1,0 +1,23 @@
+html {
+  font-family: "Rajdhani", sans-serif;
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: aqua;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url(../../assets/img/landing-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 center;
+}
+button {
+  border-radius: 10px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+}

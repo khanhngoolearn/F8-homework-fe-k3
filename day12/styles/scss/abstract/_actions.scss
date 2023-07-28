@@ -1,0 +1,11 @@
+.just-input:focus {
+    border: 1px solid #3763d2;
+}
+
+.just-input:focus ~ .label-just-input,
+.just-input:not(:placeholder-shown) ~ .label-just-input {
+    font-size: .7rem;
+    top: -5px;
+    background-color: #fff;
+}
+

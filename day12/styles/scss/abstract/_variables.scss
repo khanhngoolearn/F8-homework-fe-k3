@@ -1,0 +1,99 @@
+// Flexbox 
+.flex {
+    display: flex;
+    
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-jc-sb {
+        justify-content: space-between;
+    }
+}
+
+.mt-28 {
+    margin-top: 28px;
+}
+
+.mt-76 {
+    margin-top: 76px;
+}
+
+:root {
+    --main-color: #fff;
+    --text-align: center;
+}
+
+.switch-button {
+    min-width: 180px;
+    height: 54px;                
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;        
+}
+
+.form-element {
+    width: 484px;
+    padding: 64px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 60px 0 rgba(94,92,154,.12);
+    padding: 64px;
+    background-color: #fff;
+    position: relative;
+}
+
+.form-h2 {
+    font-weight: bolder;
+    font-size: 1.625em;
+}
+
+.input-not-checkbox {
+    height: 54px;
+    padding: 0 18px;
+    width: 100%;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.label-just-input {
+    color: #adafca;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    line-height: 1em;
+    pointer-events: none;
+    transition: all .4s ease-in-out;
+}
+
+.input-just-button {
+    margin-top: 28px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 4px 7px 12px 0 rgba(97,93,250,.2);
+}
+
+.just-input {
+    background-color: #fff;
+    border: 1px solid #dedeea;
+    color: #3e3f5e;
+    outline: none;
+}
+
+.just-checkbox {
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+}

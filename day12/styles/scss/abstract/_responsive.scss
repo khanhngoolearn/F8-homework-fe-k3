@@ -1,0 +1,36 @@
+@media screen and (max-width: 1023.98px) {
+  body {
+    width: 100vw;
+    min-height: 100vh;
+    .viking-web {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+
+      .viking-about {
+        p {
+          display: none;
+        }
+      }
+      .viking-decor {
+        display: none;
+      }
+
+      .form {
+        .js-form-login-tam {
+          transform: none;
+        }
+
+        .js-form-register-tam {
+          top: 378px;
+          transform: translateX(0px);
+          display: none;
+        }
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
