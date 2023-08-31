@@ -1,3 +1,10 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -57,12 +64,11 @@ html {
     display: block;
     clear: both;
 }
-
-.skincare,
-.shirt,
-.shoes,
+.pant,
 .bag,
-.pant {
+.shoes,
+.shirt,
+.skincare {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,12 +79,54 @@ html {
 }
 
 .skincare {
-    z-index: 2;
+    z-index: 1;
+}
+
+.shirt, .shoes, .bag, .pant {
+    display: none;
+}
+
+.img-hover {
+    position: relative;
 }
 
 .product-img {
     width: 240px;
     height: 240px;
+}
+
+.roa {
+    position: absolute;
+}
+
+
+.rate {
+    display: flex;
+    min-width: 240px;
+    transform: translateY(-112px);
+}
+
+.emotional-rate {
+    background-color: blue;
+    color: #fff;
+    width: calc(100% / 3);
+    border: 1px solid #fff;
+}
+
+.emotional-rate i {
+    padding: 16px 0px;
+    display: block;
+}
+
+.add {
+    background-color: blue;
+    color: #fff;
+    padding: 16px 80px;
+    transform: translateY(-112px);
+}
+
+.rate, .add {
+    display:none;
 }
 
 .price {

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Hey there</h2>
+        <h3><span>We'd like to hear from you.</span> Send us your message or just say hi with our contact from or directly via phone, we love to chat.</h3>
+        <form action="">
+            <label for="name" class="form" >
+                <input type="text" id="name" placeholder="Your name" class="form__input" >
+                <span class="form__icon-main" ><i class="fa fa-user"></i></span>
+                <span class="form__icon-star" ><i class="fa fa-star"></i></span>
+                <span class="form__icon-close" ><i class="ti-close"></i></span>
+                <div class="form__notice">Enter your name</div>
+                <div class="form__sub-notice"></div>
+            </label>
+
+            <label for="email" class="form" >
+                <input type="email" id="email" placeholder="Your@gmail.com" class="form__input">
+                <span class="form__icon-main"><i class="fa-solid fa-envelope"></i></span>
+                <span class="form__icon-star"><i class="fa fa-star"></i></span>
+                <span class="form__icon-close"><i class="ti-close"></i></span>
+                <div class="form__notice" >Enter your email</div>
+                <div class="form__sub-notice"></div>
+            </label>
+
+            <label for="phone" class="form" >
+                <input type="tel" id="phone" placeholder="+ 44 00 123" class="form__input">
+                <span class="form__icon-main"><i class="fa-solid fa-mobile"></i></span>
+                <span class="form__icon-star"><i class="fa fa-star"></i></span>
+                <span class="form__icon-close"><i class="ti-close"></i></span>
+                <div class="form__notice" >Enter your phone number</div>
+                <div class="form__sub-notice"></div>
+            </label>
+
+            <label for="subject" class="form" >
+                <span class="form__icon-main" ><i class="fa fa-book"></i></span>
+                <select name="Subject" id="subject" class="form__input" >
+                    <option value="select your subject" selected disabled >Subject</option>
+                    <option value="subject1">Subject1</option>
+                    <option value="subject2">Subject2</option>
+                    <option value="subject3">Subject3</option>
+                </select>
+                <span class="form__icon-star" ><i class="fa-solid fa-up-down"></i></span>
+            </label>
+
+            <label for="message" class="form" >
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" ></textarea>
+                <span class="form__icon-main"><i class="fa-solid fa-message"></i></span>
+                <span class="form__icon-star"><i class="fa fa-star"></i></span>
+                <span class="form__icon-close"><i class="ti-close"></i></span>
+            </label>
+
+            <footer class="button">
+                <label for="check" class="check-note" ><input type="checkbox" name="check" id="check"><span>Send me a copy of this message.</span></label>
+                <input type="button" value="SEND" class="send">
+            </footer>
+        </form>
+    </div>
+</body>
+</html>

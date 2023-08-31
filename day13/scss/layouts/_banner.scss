@@ -1,0 +1,56 @@
+.banner {
+  .banner-layout {
+    margin: 0%;
+    .banner-about {
+      max-width: 50%;
+      padding: 200px 100px 150px 150px;
+      font-weight: 800;
+      h2 {
+        font-size: 24px;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        max-width: 220px;
+        height: auto;
+        margin: 12px 0;
+      }
+      p {
+        font-weight: 400;
+      }
+    }
+
+    .banner__image--1 {
+      width: 25%;
+      height: 591.2px;
+      background-color: $paleGreen;
+      position: relative;
+      .banner__image--inner {
+        position: absolute;
+        left: -50%;
+        top: 50%;
+        transform: translateY(-50%);
+        img {
+          max-width: 580px;
+          height: auto;
+        }
+      }
+    }
+
+    .banner__image--2 {
+      width: 25%;
+      height: 591.2px;
+      background-color: $paleGreen;
+      overflow: hidden;
+      .banner__image--title {
+        color: #216000;
+        font-size: 103.67px;
+        font-weight: 800;
+        opacity: 0.15000000596046448;
+        line-height: 0.9;
+        text-align: center;
+        rotate: 90deg;
+      }
+    }
+  }
+}

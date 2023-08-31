@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+.main {
+    width: 800px;
+    height: 600px;
+    margin: 160px auto 0;
+    background-color: #fff;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.main .box .box-item {
+    display: flex;
+    color: #fff;
+    background-color: orangered;
+    line-height: 22px;
+    padding: 4px;
+    margin-top: 4px;
+}   
+
+.main .box .ti-minus {
+    display: none;
+    font-weight: bold;
+    transform: translateY(3px);
+}
+
+.main .box h3 {
+    margin-left: 8px;
+}
+
+.main .box .text {
+    padding: 16px;
+    display: none;
+}
+
+input[id='box1']:checked ~ .box .box1 ~ .text {
+    display: block;
+}
+
+input[id='box1']:checked  ~ .box .box1 .ti-plus {
+    display: none;
+}
+
+input[id='box1']:checked  ~ .box .box1 .ti-minus {
+    display: block;
+}
+
+input[id='box2']:checked ~ .box .box2 ~ .text {
+    display: block;
+}
+
+input[id='box2']:checked ~ .box .box2 .ti-plus {
+    display: none;
+}
+
+input[id='box2']:checked ~ .box .box2 .ti-minus {
+    display: block;
+}
+
+input[id='box3']:checked ~ .box .box3 ~ .text {
+    display: block;
+}
+
+input[id='box3']:checked ~ .box .box3 .ti-plus {
+    display: none;
+}
+
+input[id='box3']:checked ~ .box .box3 .ti-minus {
+    display: block;
+}

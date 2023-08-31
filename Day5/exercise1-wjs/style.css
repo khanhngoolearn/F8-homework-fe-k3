@@ -1,0 +1,193 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.main {
+    width: 800px;
+    background-color: #fff; 
+    height: 1000px;
+    padding: 24px 48px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "Lobster", sans-serif;
+}
+
+h3 {
+    padding: 12px 0px;
+}
+
+h3 > span {
+    color: red;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    border: 1px solid #00000033;
+}
+
+.form__icon-main {
+    position: absolute;
+    color: #fff;
+    background-color: #00000033;
+    line-height: 50.4px;
+    width: 50.4px;
+    text-align: center;
+    height: 100%;
+}
+
+.form__icon-star {
+    position: absolute;
+    left: 94%;
+    font-size: 12px;
+    color: #00000033;
+    /* display: none; */
+    top: 16px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.form__icon-close {
+    display: none;
+    left: 94%;
+    position: absolute;
+    font-size: 8px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 4px 4px 2px;
+    top: 16px;
+}
+
+.ti-close {
+    font-size: 8px;
+}
+
+
+.form__notice {
+    display: none;
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    padding: 16px 32px;
+    top: -148%;
+    left: 68px;
+}
+
+.form__sub-notice {
+    width: 12px;
+    height: 0px;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #000;
+    position: absolute;
+    top: -40%;
+    left: 116px;
+    display: none;
+}
+
+.form__input {
+    width: 100%;
+    padding: 12px 60px;
+    outline: none;
+    appearance: none;
+    border: 1px solid #00000033;
+}
+
+#message {
+    width: 702px;
+    height: 219px;
+    resize: none;
+    padding: 12px 60px;
+
+}
+
+.button {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-note {
+    display: flex;
+    align-items: center;
+}
+
+#check {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.send {
+    color: #fff;
+    background-color: red;
+    padding: 8px 24px;
+}
+
+/* ACTION  */
+
+.form:hover {
+    border: 1px solid #000;
+}
+
+.form:hover .form__icon-main {
+    background-color: #000;
+}
+
+.form:hover .form__icon-star {
+    color: #000;
+}
+
+.form__input:focus {
+    border: 1px solid #000;
+}
+
+.form__input:focus ~ .form__icon-main {
+    background-color: #000;
+}
+
+.form__input:focus ~ .form__icon-star {
+    display: none;
+}
+
+.form__input:focus ~ .form__notice,
+.form__input:focus ~ .form__sub-notice,
+.form__input:focus ~ .form__icon-close {
+    display: block;
+}
+
+#message:focus ~ .form__icon-star {
+    display: none;
+}
+
+#message:focus ~ .form__icon-close {
+    display: block;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
