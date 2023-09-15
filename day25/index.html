@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <input type="button" value="Sign Up" id="button-parents" />
+      <div class="background"></div>
+      <!-- Form Action -->
+      <form action="" id="form" class="d-none">
+        <input type="button" value="Đăng nhập" id="sign-up" />
+        <input type="button" value="Đăng kí" id="regist" />
+        <!-- Sign Up -->
+        <div class="sign-up-form">
+          <p>với các tài khoản mạng xã hội</p>
+          <div class="social-media">
+            <a href="#!"
+              ><img
+                src="https://storage.googleapis.com/support-kms-prod/ZAl1gIwyUsvfwxoW9ns47iJFioHXODBbIkrK"
+                alt="google-logo"
+              />
+              Google</a
+            >
+            <a href="#!"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/2048px-Facebook_icon_2013.svg.png"
+                alt="facebook-logo"
+              />
+              Facebook</a
+            >
+          </div>
+          <div class="line">
+            <div class="line-child"></div>
+            <p>hoặc</p>
+            <div class="line-child"></div>
+          </div>
+          <div class="input-form">
+            <p class="d-none error-acc">Account not existed</p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <p class="d-none error">Vui lòng nhập thông tin</p>
+            <label for="pass">Mật khẩu</label>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Mật khẩu"
+            />
+            <p class="d-none error">Vui lòng nhập thông tin</p>
+          </div>
+          <div>
+            <a href="#!">Quên mật khẩu?</a>
+          </div>
+          <input type="button" value="Đăng nhập" id="sign-up-submit" />
+        </div>
+        <!-- End Sign Up -->
+
+        <!-- Register form  -->
+        <div class="register-form d-none">
+          <p>Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
+
+          <div class="input-form">
+            <label for="name">Họ và tên</label>
+            <input type="text" name="name" id="name" placeholder="Họ và tên" />
+            <p class="d-none error">Vui lòng nhập thông tin</p>
+
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <p class="d-none error">Vui lòng nhập thông tin</p>
+
+            <label for="pass">Mật khẩu</label>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Mật khẩu"
+            />
+            <p class="d-none error">Vui lòng nhập thông tin</p>
+
+            <p>
+              Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi<a
+                href="#!"
+              >
+                điều kiện về qui định và chính sách của Dân trí</a
+              >
+            </p>
+
+            <input type="button" value="Đăng kí" id="regist-submit" />
+          </div>
+        </div>
+        <!-- End Register form  -->
+      </form>
+      <!-- End Form Action  -->
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
