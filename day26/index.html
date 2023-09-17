@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="todos-box">
+        <h1>Get Things Done !</h1>
+        <div class="todo-form">
+          <form id="add">
+            <input
+              type="text"
+              id="search"
+              placeholder="What is the task today?"
+            />
+            <input type="submit" value="Add Task" />
+          </form>
+        </div>
+        <div class="todo-list">
+          <div class="todo-item">
+            <p>Littering flowers</p>
+            <div class="fix-and-delete">
+              <i class="fa-solid fa-pen-to-square fix"></i>
+              <i class="fa-solid fa-trash delete"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
