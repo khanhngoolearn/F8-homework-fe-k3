@@ -1,0 +1,32 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px;
+}
+
+h3 {
+    margin: 16px 0;
+}
+
+thead td {
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    height: 60px;
+}
+thead tr td:last-child:has(input[type="number"]),
+tbody tr td:last-child:has(input[type="number"]) {
+    display: flex;
+    flex-direction: column;
+}
+
+tbody tr td:last-child input,
+tbody tr td:last-child button{
+    padding: 5px 0;
+}

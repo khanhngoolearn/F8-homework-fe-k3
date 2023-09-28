@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>DANH SÁCH SẢN PHẨM</h3>
+      <table cellpadding="0" cellspacing="0" width="100%" border="1">
+        <thead border="1">
+          <tr>
+            <td width="5%">STT</td>
+            <td width="75%">Tên sản phẩm</td>
+            <td width="10%">Giá</td>
+            <td>Thêm vào giỏ</td>
+          </tr>
+        </thead>
+        <tbody>
+          <td>1</td>
+          <td>Sản phẩm 1</td>
+          <td>1000</td>
+          <td class="addCart">
+            <input type="number" value="1" />
+            <button id="art-to-cart1">Thêm vào giỏ</button>
+          </td>
+        </tbody>
+        <tbody>
+          <td>2</td>
+          <td>Sản phẩm 2</td>
+          <td>2000</td>
+          <td class="addCart">
+            <input type="number" value="1" />
+            <button id="art-to-cart2">Thêm vào giỏ</button>
+          </td>
+        </tbody>
+        <tbody>
+          <td>3</td>
+          <td>Sản phẩm 3</td>
+          <td>3000</td>
+          <td class="addCart">
+            <input type="number" value="1" />
+            <button id="art-to-cart3">Thêm vào giỏ</button>
+          </td>
+        </tbody>
+        <tbody>
+          <td>4</td>
+          <td>Sản phẩm 4</td>
+          <td>4000</td>
+          <td class="addCart">
+            <input type="number" value="1" />
+            <button id="art-to-cart4">Thêm vào giỏ</button>
+          </td>
+        </tbody>
+      </table>
+      <h3>Giỏ hàng</h3>
+      <div id="cart-data">Giỏ hàng không có sản phẩm</div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
