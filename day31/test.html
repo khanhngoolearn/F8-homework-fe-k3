@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Draggable List Items</title>
+    <style>
+      .draggable-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .draggable-list li {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+        cursor: move;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="draggable-list">
+      <li draggable="true">Item 1</li>
+      <li draggable="true">Item 2</li>
+      <li draggable="true">Item 3</li>
+      <li draggable="true">Item 4</li>
+    </ul>
+
+    <script>
+      const list = document.querySelector(".draggable-list");
+
+      let draggedItem = null;
+
+      list.addEventListener("dragstart", function (event) {
+        draggedItem = event.target;
+        event.dataTransfer.setData("text/plain", event.target.textContent);
+      });
+
+      list.addEventListener("dragover", function (event) {
+        event.preventDefault();
+      });
+
+      list.addEventListener("drop", function (event) {
+        const target = event.target;
+        const data = event.dataTransfer.getData("text/plain");
+        const listItem = document.createElement("li");
+        listItem.textContent = data;
+
+        if (target.tagName === "LI") {
+          target.parentElement.insertBefore(listItem, target);
+        } else {
+          list.appendChild(listItem);
+        }
+
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>
