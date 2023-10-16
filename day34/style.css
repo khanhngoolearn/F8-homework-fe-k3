@@ -1,0 +1,48 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+    background-color: #d3d3d3;
+}
+
+h1 {
+    font-size: 80px;
+    padding: 20px 0;
+}
+
+.zoom-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.zoom-img {
+    position: relative;
+    max-height: 402px;
+    border: 1px solid #000;
+}
+
+.zoom-cam {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    background-color: #fff;
+}
+.zoom-result {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.zoom-result img {
+    position: absolute;
+    opacity: 0;
+}
